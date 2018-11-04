@@ -14,4 +14,6 @@ class SchoolDetailView(DetailView):
     model = models.School
     template_name = 'basic_app/school_detail.html'
 
-# class SchoolCreateView(CreateView):
+class SchoolCreateView(CreateView):
+    fields = ('name','principal','location')
+    model = models.School
